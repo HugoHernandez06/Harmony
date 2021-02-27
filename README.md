@@ -1,3 +1,2 @@
 # Harmony
-Hugo Alejandro Hernández Cárdenas
-Daniel Felipe Cadavid
+Hugo Alejandro Hernández Cárdenas - Daniel Felipe Cadavid
