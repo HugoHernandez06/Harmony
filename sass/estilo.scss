@@ -1,15 +1,18 @@
 section{
     width:375px;
     height:600px;
-    background:hotpink;
+    background: #FFAFCC;
     overflow:auto;
     text-align:center;
+  
 }
 body{
-    margin:0;
+  margin:0; 
+  
+
+  p{
+    background: white;
   }
-  
-  
   .volver{
     margin-left: -260px;
     line-height: 50px;
@@ -32,9 +35,8 @@ body{
     
     /* 🚨 Estos estilos no se modifican para probar el ancho*/
     
-    body{
       font-family:sans-serif;
-    }
+    
     div{
       padding:10px;
       
@@ -99,26 +101,6 @@ body{
         transition: all 0.3s ease;
     }
     
-    pre:hover::after {
-        opacity: 0;
-        visibility: visible;
-    }
-    
-    pre.code-css code {
-        color: #91a7ff;
-    }
-    
-    pre.code-html code {
-        color: #aed581;
-    }
-    
-    pre.code-javascript code {
-        color: #ffa726;
-    }
-    
-    pre.code-jquery code {
-        color: #4dd0e1;
-    }
   
     input[type=text], input[type=password] {
     width: 100%;
@@ -127,20 +109,35 @@ body{
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    width:300px;
+    height:40px;
   }
   
   button {
-    background-color: purple;
+    background-color: #9968b6;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width:300px;
+    height:40px;
   }
   
   button:hover {
     opacity: 0.8;
+  }
+
+  .volver {
+    
+    background-color: #9968b6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:300px;
+    height:40px;
   }
   
   .cancelbtn {
@@ -152,3 +149,5 @@ body{
   .container {
     padding: 16px;
   }
+
+}
