@@ -13,10 +13,7 @@ body{
   p{
     background: white;
   }
-  .volver{
-    margin-left: -260px;
-    line-height: 50px;
-  }
+  
   
   .volverAdmin{
     margin-left: -260px;
@@ -67,9 +64,6 @@ body{
         top: 15px;
         text-align: center;
         width: 60px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         pointer-events: none;
   }
     
@@ -97,7 +91,6 @@ body{
         color: #ddd;
         line-height: 20px;
         overflow: hidden;
-        -webkit-backface-visibility: hidden;
         transition: all 0.3s ease;
     }
     
@@ -112,6 +105,7 @@ body{
     width:300px;
     height:40px;
   }
+  
   
   button {
     background-color: #9968b6;
