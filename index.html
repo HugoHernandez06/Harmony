@@ -3,7 +3,9 @@
   <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <LINK REL=StyleSheet HREF="css/estilo.css" TYPE="text/css" MEDIA=screen>
+   <script src="node_modules/jquery/dist/jquery.min.js" language="javascript" type="text/javascript"></script>
    <script src="js/main.js" language="javascript" type="text/javascript"></script>
+   <script src="js/procedimientos.js" language="javascript" type="text/javascript"></script>
    <title>Harmony</title>
 </head>
   <body>
@@ -152,6 +154,31 @@
               <option value="10">Aumento de pomulos</option> 
               <option value="11">Masaje reducctor</option>  
             </select>  <br>
+
+            <div class="recipe-menu">
+
+              <!-- Recipe 1 -->
+              <div class="recipe">
+                <p class="name">Hamburger</p>
+                <img src="https://www.kingsford.com/wp-content/uploads/2014/11/kfd-howtohamburger-Burgers_5_0391-1024x621.jpg">
+                <a class="btnStyle3 btnStyle addToCart" id="addToCartHamburger">Add to Cart</a>
+                <p class="price"><span>15</span>$</p>
+                <div id="checkOrderHamburger" title="Hamburger">
+                  <h3 class="listHeading">List of Ingredients:</h3>
+                  <ul class="listOfIngredients" id="recipe1">
+                    <li><input type="checkbox" checked>Sesame Bun</li>
+                    <li><input type="checkbox" checked>Ground Beef Patty</li>
+                    <li><input type="checkbox" checked>Onion</li>
+                    <li><input type="checkbox" checked>Pickle</li>
+                    <li><input type="checkbox" checked>Lettuce Salad</li>
+                  </ul>
+                  <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+                  <a class="btnStyle listOver">Done</a>
+                  <h4 class="totalDialog" id="totalDialog1">Total: <span>15</span>$</h4>
+                </div>
+            </div>
+            
+
             <button type="submit">Buscar</button>  <br> 
             <h3>Información del procedimiento</h3><br>
             <label>Nombre del procedimiento: </label>   <br>
