@@ -1,0 +1,165 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <LINK REL=StyleSheet HREF="sass/estilo.css" TYPE="text/css" MEDIA=screen>
+   <script src="js/main.js" language="javascript" type="text/javascript"></script>
+   <script src="js/ligthbox.js" language="javascript" type="text/javascript"></script>
+   <title>Harmony</title>
+</head>
+  <body>
+
+      <!--Splash-->
+      <section id="splash">
+        <div class="header">
+          <h1>Harmony</h1>
+        </div> 
+          <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a> 
+      </section>
+      <!--Registrarse-->
+      <section id="register" class="ocultar">
+        <div class="header">
+          <h1 >Harmony</h1>
+        </div>
+        <div>
+        <a><img src="./imgs/Logo_Harmony.png" alt="Logo" border="0"></a><br>
+          <label>Usuario : </label><br>  
+          <input type="text" placeholder="Ingresa el usuario" name="username" required><br>
+          <label>Contraseña : </label><br>
+          <input type="password" placeholder="Ingresa la contraseña" name="password" required><br>
+          <label>Confirmar contraseña : </label><br>
+          <input type="password" placeholder="Ingresa la contraseña" name="confirmPassword" required><br>
+          <button href="javascript:void(0);" id="btn_login" >Entrar</button><br>
+          Ya estas registrado?<a href="javascript:void(0);" id="btn_iniciar_Sesion"> Iniciar sesión </a><br><br><br>
+        </div>  
+        <div class="footer">
+            Copyright 2021 ©
+        </div>
+      </section>
+      <!--Login -->
+      <section id="login" class="ocultar">
+        <div class="header">
+          <h1>Harmony</h1>
+        </div>
+        <div>
+          <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a><br><br>
+            <label>Usuario : </label><br>  
+            <input type="text" placeholder="Ingresa el usuario" name="username" required><br>
+            <label>Contraseña : </label><br>
+            <input type="password" placeholder="Ingresa la contraseña" name="password" required><br>
+            <button href="javascript:void(0);" id="btn_home" >Entrar</button><br>
+            <input type="checkbox" checked="checked"> Recordarme.<br>
+            No estas registrado?<a href="javascript:void(0);" id="btn_register">Registrarse</a><br><br><br>
+        </div>
+        <div class="footer">
+            Copyright 2021 ©
+        </div>
+      </section>
+
+      <!--home -->
+      <section id="home" class="ocultar">
+        <div class="header">
+          <h1>Harmony</h1>
+        </div> 
+          <a><img src="./imgs/Logo_Harmony.png" alt="Logo" border="0"></a>        
+          <h3> Opciones</h2>
+          <button href="javascript:void(0);" id="btn_agendarcita"> Agendar Citas</button>
+         <!-- <button href="javascript:void(0);" id="btn_buscarcita"> Busqueda Citas</button> -->
+          <button href="javascript:void(0);" id="btn_procedimientos"> Procedimientos y Tarifas</button>
+          <div class="footer">
+            Copyright 2021 ©
+        </div>
+      </section>
+      
+      <!--Agendar Citas -->
+      <section id="agendarcita" class="ocultar">
+        <div class="header">
+          <a id="btn_volver" class="volver"> Volver al home </a>
+          <h1>Harmony</h1>
+        </div> 
+        <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a><br>
+        <h3>Agendar Citas</h3>
+        <label>Nombre Completo </label> <br>  
+        <input type="text" placeholder="Ingrese el nombre completo" name="nombrecita" required>  <br>
+        <label>Documento : </label>   <br>
+        <input type="text" placeholder="Ingrese el Documento" name="documento" required>  <br>
+        <label>Celular : </label>   <br>
+        <input type="text" placeholder="Ingrese el numero celular" name="celular" required>  <br>
+        <label>Procedimiento : </label>   <br>
+        <select name="procename">
+          <option value="1">Perfilación malar</option> 
+          <option value="2">Aumento de labios</option> 
+          <option value="3">Aumento de gluteos</option>
+          <option value="10">Aumento de pomulos</option> 
+          <option value="11">Masaje reductor</option>  
+        </select><br><br>
+        <label>Fecha Cita : </label>   <br>
+        <input type="text" placeholder="Ingrese la fecha de la Cita" name="fechaCita" required>  <br>
+        <label>Hora Cita : </label>   <br>
+        <input type="text" placeholder="Ingrese la hora de la Cita" name="horaCita" required>  <br>
+        <button id="btn_citaagendada" type="submit">Agendar</button> <br><br><br> 
+        <!--
+        <input href="javascript:void(0);" type="button" id="abrir" value="Abrir Lightbox">
+        <div id="ventana" class="ligthbox hidden">
+          <div class="login_content">
+            <div id="cerrar" class="close_button">x</div>
+            <h1>La cita ha sido agendada</h1>
+            <img src="./imgs/verificate.png" alt="verificado">
+		      </div>
+	      </div>
+        -->
+        <div class="footer">
+            Copyright 2021 ©
+        </div>
+
+      </section>
+
+      <!--Cita Agendada -->
+      <section id="citaagendada" class="ocultar">
+        <div class="header">
+          <a id="btn_volver" class="volver"> Volver al home </a>
+        </div>
+          <a><img src="./imgs/Logo_Harmony.png" alt="Logo" border="0"></a>        
+          <h3> Cita agendada correctamente</h2>
+          <a><img src="./imgs/verificate.png" alt="Logo" border="0"></a>
+
+          
+         <button href="javascript:void(0);" clas="volverAgendar" id="btn_agendarcita"> Agendar otra cita</button> 
+         
+          <div class="footer">
+            Copyright 2021 ©
+        </div>
+      </section>
+
+      <!--Procedimientos y tarifas-->
+        <section id="procedimientos" class="ocultar">
+        <div class="header">
+          <a href="javascript:void(0);" id="btn_volver" class="volver"> Volver al home </a>
+          <h1>Harmony</h1>
+        </div> 
+          <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a> <br>
+            <h2>Procedimientos y tarifas</h2>       
+            <label>Selecione el procedimiento : </label> <br>
+            <select name="procename">
+              <option value="1">Perfilación malar</option> 
+              <option value="2">Aumento de labios</option> 
+              <option value="3">Aumento de gluteos</option>
+              <option value="10">Aumento de pomulos</option> 
+              <option value="11">Masaje reducctor</option>  
+            </select>  <br>
+            <button type="submit">Buscar</button>  <br> 
+            <h3>Información del procedimiento</h3><br>
+            <label>Nombre del procedimiento: </label>   <br>
+            <p>*Muestra el nombre*</p><br>
+            <label>Especialista : </label>   <br>
+            <p>*Muestra el nombre*</p><br>
+            <label>Costo : </label>   <br>
+            <p>*Muestra el costo*</p><br>
+            <label>Horarios : </label>   <br>
+            <p>*Muestra el horario*</p><br><br><br>
+          <div class="footer">
+            Copyright 2021 © 2021 ©
+          </div>
+        </section>        
+  </body>
+</html>
