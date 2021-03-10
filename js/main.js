@@ -1,11 +1,7 @@
 
 var splash, register, login , home, agendarcita, procedimientos;
 //, buscarcita, paneladmin, adminempleados, adminproce, empleadospass, adminpass;
-<<<<<<< HEAD
-var btn_register, btn_login, btn_home, btns_volver, btn_agendarcita, btn_procedimientos;
-=======
 var btn_iniciar_Sesion, btn_register, btn_login, btn_home, btns_volver, btn_agendarcita, btn_procedimientos;
->>>>>>> b4ed84d436b6138d9d10276788a7009fc9a95e24
 // btns_volverAdmin, btn_buscarcita, btn_paneladmin, btn_adminempleados, btn_adminproce, btn_empleadospass, btn_adminpass;
 var secciones;
 
@@ -45,11 +41,7 @@ function crearReferencias(){ //Saco el id de la seccion y del boton
   //btns_volverAdmin = document.querySelectorAll(".volverAdmin"); //Volver al panel admin
   btn_register = document.getElementById("btn_register");
   btn_login = document.getElementById("btn_login");
-<<<<<<< HEAD
-  
-=======
   btn_iniciar_Sesion = document.getElementById("btn_iniciar_Sesion");  
->>>>>>> b4ed84d436b6138d9d10276788a7009fc9a95e24
   //Boton de entrar despues de logearse
   btn_home = document.getElementById("btn_home");
   //Botones del HOME
@@ -72,10 +64,7 @@ function agregarEventos() //Redireccion el destino al dar clic al boton
   //btns_volverAdmin.addEventListener("click",()=>{irA(paneladmin);});
   
   btn_register.addEventListener("click",()=>{irA(register);});
-<<<<<<< HEAD
-=======
   btn_iniciar_Sesion.addEventListener("click",()=>{irA(login);});
->>>>>>> b4ed84d436b6138d9d10276788a7009fc9a95e24
   btn_login.addEventListener("click",()=>{irA(login);});
   btn_home.addEventListener("click",()=>{irA(home);});
   btn_agendarcita.addEventListener("click",()=>{irA(agendarcita);});
