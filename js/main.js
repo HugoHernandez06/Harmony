@@ -1,10 +1,11 @@
 
-var splash, register, login , home, agendarcita, procedimientos;
+var splash, register, login , home, agendarcita, citaagendada, procedimientos;
 //, buscarcita, paneladmin, adminempleados, adminproce, empleadospass, adminpass;
-var btn_iniciar_Sesion, btn_register, btn_login, btn_home, btns_volver, btn_agendarcita, btn_procedimientos;
+var btn_iniciar_Sesion, btn_register, btn_login, btn_home, btns_volver, btn_agendarcita, btn_procedimientos, btn_citaagendada;
 // btns_volverAdmin, btn_buscarcita, btn_paneladmin, btn_adminempleados, btn_adminproce, btn_empleadospass, btn_adminpass;
 var secciones;
 
+//window.onload = init;
 window.onload = ()=>{
   
   crearReferencias();
@@ -12,6 +13,22 @@ window.onload = ()=>{
   setTimeout(()=>{irA(login);},1500);
 }
 
+/*
+function init()
+{
+  abrir.addEventListener("click",abrirVentana);
+  cerrar.addEventListener("click",cerrarVentana);
+}
+
+function abrirVentana(){  
+  ventana.className = "ligthbox animated fadeIn";
+}
+
+function cerrarVentana(){
+  ventana.className = "ligthbox hidden";
+}
+
+*/
 function crearReferencias(){ //Saco el id de la seccion y del boton
   
   splash = document.getElementById("splash");
@@ -22,7 +39,8 @@ function crearReferencias(){ //Saco el id de la seccion y del boton
   home = document.getElementById("home");
   //Home
   agendarcita = document.getElementById("agendarcita");
- // buscarcita = document.getElementById("buscarcita");
+  citaagendada = document.getElementById("citaagendada");
+  // buscarcita = document.getElementById("buscarcita");
   procedimientos = document.getElementById("procedimientos");
  /*
   paneladmin = document.getElementById("paneladmin");
@@ -32,12 +50,12 @@ function crearReferencias(){ //Saco el id de la seccion y del boton
   adminpass = document.getElementById("adminpass");
   empleadospass = document.getElementById("empleadospass");
   */
-  secciones = [splash, register, login , home, agendarcita, procedimientos];//, buscarcita, paneladmin, adminproce, adminempleados, empleadospass, adminpass];
+  secciones = [splash, register, login , home, agendarcita, citaagendada, procedimientos];//, buscarcita, paneladmin, adminproce, adminempleados, empleadospass, adminpass];
   
   //Botones de volver
   //btns_volver = document.getElementById("btn_volver"); //Volver al home
   btns_volver = document.querySelectorAll(".volver"); //Volver al home
- // btns_volverAdmin = document.getElementById("btn_volverAdmin"); //Volver al panel admin
+ // btns_volverAgendar = document.querySelectorAll(".volverAgendar"); //Volver al panel admin
   //btns_volverAdmin = document.querySelectorAll(".volverAdmin"); //Volver al panel admin
   btn_register = document.getElementById("btn_register");
   btn_login = document.getElementById("btn_login");
@@ -46,6 +64,7 @@ function crearReferencias(){ //Saco el id de la seccion y del boton
   btn_home = document.getElementById("btn_home");
   //Botones del HOME
   btn_agendarcita = document.getElementById("btn_agendarcita");
+  btn_citaagendada = document.getElementById("btn_citaagendada");
   //btn_buscarcita = document.getElementById("btn_buscarcita");
   btn_procedimientos = document.getElementById("btn_procedimientos");
  // btn_paneladmin = document.getElementById("btn_paneladmin");
@@ -68,6 +87,7 @@ function agregarEventos() //Redireccion el destino al dar clic al boton
   btn_login.addEventListener("click",()=>{irA(login);});
   btn_home.addEventListener("click",()=>{irA(home);});
   btn_agendarcita.addEventListener("click",()=>{irA(agendarcita);});
+  btn_citaagendada.addEventListener("click",()=>{irA(citaagendada);});
   //btn_buscarcita.addEventListener("click",()=>{irA(buscarcita);});
   btn_procedimientos.addEventListener("click",()=>{irA(procedimientos);});
   //btn_paneladmin.addEventListener("click",()=>{irA(paneladmin);});
@@ -76,11 +96,11 @@ function agregarEventos() //Redireccion el destino al dar clic al boton
   //btn_empleadospass.addEventListener("click",()=>{irA(empleadospass);});
   //btn_adminpass.addEventListener("click",()=>{irA(adminpass);});
   
-  for(var i=0;i<=1;i++)
+  for(var i=0;i<=2;i++)
   {
       btns_volver[i].addEventListener("click",()=>{irA(home);});
-      //bnt_login[i].addEventListener("click",()=>{irA(login);});
-     // btns_volverAdmin[i].addEventListener("click",()=>{irA(paneladmin);});
+      //btn_login[i].addEventListener("click",()=>{irA(login);});
+     // btns_volverAgendar[i].addEventListener("click",()=>{irA(agendarcita);});
   }
 
 }

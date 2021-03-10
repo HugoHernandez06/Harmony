@@ -2,8 +2,9 @@
 <head>
   <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <LINK REL=StyleSheet HREF="css/estilo.css" TYPE="text/css" MEDIA=screen>
+   <LINK REL=StyleSheet HREF="sass/estilo.css" TYPE="text/css" MEDIA=screen>
    <script src="js/main.js" language="javascript" type="text/javascript"></script>
+   <script src="js/ligthbox.js" language="javascript" type="text/javascript"></script>
    <title>Harmony</title>
 </head>
   <body>
@@ -96,46 +97,40 @@
         <input type="text" placeholder="Ingrese la fecha de la Cita" name="fechaCita" required>  <br>
         <label>Hora Cita : </label>   <br>
         <input type="text" placeholder="Ingrese la hora de la Cita" name="horaCita" required>  <br>
-        <button type="submit">Agendar</button> <br><br><br> 
-
+        <button id="btn_citaagendada" type="submit">Agendar</button> <br><br><br> 
+        <!--
+        <input href="javascript:void(0);" type="button" id="abrir" value="Abrir Lightbox">
+        <div id="ventana" class="ligthbox hidden">
+          <div class="login_content">
+            <div id="cerrar" class="close_button">x</div>
+            <h1>La cita ha sido agendada</h1>
+            <img src="./imgs/verificate.png" alt="verificado">
+		      </div>
+	      </div>
+        -->
         <div class="footer">
             Copyright 2021 ©
         </div>
 
-
-
       </section>
 
-      <!--Buscar Citas 
-      <section id="buscarcita" class="ocultar">
-        <a href="javascript:void(0);" id="btn_volver" class="volver"> Volver al home </a>
+      <!--Cita Agendada -->
+      <section id="citaagendada" class="ocultar">
         <div class="header">
-          <h1>Harmony</h1>
-        </div> 
-        <a><img src="/imgs/Logo_Harmony.png" alt="Logo" border="0"></a> <br>
-        <h2>Busqueda de citas</h2>       
-        <select name="clientesdoc">
-          <option value="1">99051807142</option> 
-          <option value="2">8279876</option> 
-          <option value="3">22028094</option>
-          <option value="10">1152715672</option> 
-        </select>
-        <button type="submit">Buscar</button>  <br> 
-        <h2>Información de la cita</h2><br>
-        <label>Nombre : </label>   <br>
-        <p style="background:white;">*Muestra el nombre*</p><br>
-        <label>Procedimiento : </label> <br>
-        <p style="background:white;">*Muestra el procedimiento*</p><br>
-        <label>Fecha cita : </label><br>
-        <p style="background:white;">*Muestra la fecha*</p><br>
-        <label>Hora Cita : </label>   <br>
-        <p style="background:white;">*Muestra la hora*</p><br><br>
-         Asistencia <input type="checkbox" checked="checked"><br><br><br>       
-        <div class="footer">
+          <a id="btn_volver" class="volver"> Volver al home </a>
+        </div>
+          <a><img src="./imgs/Logo_Harmony.png" alt="Logo" border="0"></a>        
+          <h3> Cita agendada correctamente</h2>
+          <a><img src="./imgs/verificate.png" alt="Logo" border="0"></a>
+
+          
+         <button href="javascript:void(0);" clas="volverAgendar" id="btn_agendarcita"> Agendar otra cita</button> 
+         
+          <div class="footer">
             Copyright 2021 ©
         </div>
       </section>
-    -->
+
       <!--Procedimientos y tarifas-->
         <section id="procedimientos" class="ocultar">
         <div class="header">
