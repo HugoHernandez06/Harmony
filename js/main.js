@@ -1,7 +1,7 @@
 
-var splash, register, login , home, agendarcita, procedimientos;
+var splash, register, login , home, agendarcita, citaagendada, procedimientos;
 //, buscarcita, paneladmin, adminempleados, adminproce, empleadospass, adminpass;
-var btn_iniciar_Sesion, btn_register, btn_login, btn_home, btns_volver, btn_agendarcita, btn_procedimientos;
+var btn_iniciar_Sesion, btn_register, btn_login, btn_home, btns_volver, btn_agendarcita, btn_procedimientos, btn_citaagendada;
 // btns_volverAdmin, btn_buscarcita, btn_paneladmin, btn_adminempleados, btn_adminproce, btn_empleadospass, btn_adminpass;
 var secciones;
 
@@ -15,72 +15,53 @@ window.onload = ()=>{
 function crearReferencias(){ //Saco el id de la seccion y del boton
   
   splash = document.getElementById("splash");
-
-  login = document.getElementById("login");
   register = document.getElementById("register");
+  login = document.getElementById("login")
   
   home = document.getElementById("home");
   //Home
   agendarcita = document.getElementById("agendarcita");
- // buscarcita = document.getElementById("buscarcita");
+  citaagendada = document.getElementById("citaagendada");
   procedimientos = document.getElementById("procedimientos");
- /*
-  paneladmin = document.getElementById("paneladmin");
-  //Panel andmin
-  adminproce = document.getElementById("adminproce");
-  adminempleados = document.getElementById("adminempleados");
-  adminpass = document.getElementById("adminpass");
-  empleadospass = document.getElementById("empleadospass");
-  */
-  secciones = [splash, register, login , home, agendarcita, procedimientos];//, buscarcita, paneladmin, adminproce, adminempleados, empleadospass, adminpass];
+ 
+  secciones = [splash, register, login , home, agendarcita, citaagendada, procedimientos];//, buscarcita, paneladmin, adminproce, adminempleados, empleadospass, adminpass];
   
   //Botones de volver
   //btns_volver = document.getElementById("btn_volver"); //Volver al home
   btns_volver = document.querySelectorAll(".volver"); //Volver al home
- // btns_volverAdmin = document.getElementById("btn_volverAdmin"); //Volver al panel admin
+ // btns_volverAgendar = document.querySelectorAll(".volverAgendar"); //Volver al panel admin
   //btns_volverAdmin = document.querySelectorAll(".volverAdmin"); //Volver al panel admin
   btn_register = document.getElementById("btn_register");
   btn_login = document.getElementById("btn_login");
-  btn_iniciar_Sesion = document.getElementById("btn_iniciar_Sesion");  
+  btn_iniciar_Sesion = document.getElementById("btn_iniciar_Sesion"); 
+  
   //Boton de entrar despues de logearse
   btn_home = document.getElementById("btn_home");
+
   //Botones del HOME
   btn_agendarcita = document.getElementById("btn_agendarcita");
-  //btn_buscarcita = document.getElementById("btn_buscarcita");
+  btn_citaagendada = document.getElementById("btn_citaagendada");
   btn_procedimientos = document.getElementById("btn_procedimientos");
- // btn_paneladmin = document.getElementById("btn_paneladmin");
-/*
-  //Botones del panel Admin
-  btn_adminempleados = document.getElementById("btn_adminempleados");
-  btn_adminproce = document.getElementById("btn_adminproce");
-  btn_empleadospass = document.getElementById("btn_empleadospass");
-  btn_adminpass = document.getElementById("btn_adminpass");
-*/
+
 }
 
 function agregarEventos() //Redireccion el destino al dar clic al boton
 {
   //btns_volver.addEventListener("click",()=>{irA(home);});
-  //btns_volverAdmin.addEventListener("click",()=>{irA(paneladmin);});
-  
+  //btns_volverAdmin.addEventListener("click",()=>{irA(paneladmin);}); 
   btn_register.addEventListener("click",()=>{irA(register);});
   btn_iniciar_Sesion.addEventListener("click",()=>{irA(login);});
   btn_login.addEventListener("click",()=>{irA(login);});
   btn_home.addEventListener("click",()=>{irA(home);});
   btn_agendarcita.addEventListener("click",()=>{irA(agendarcita);});
-  //btn_buscarcita.addEventListener("click",()=>{irA(buscarcita);});
-  btn_procedimientos.addEventListener("click",()=>{irA(procedimientos);});
-  //btn_paneladmin.addEventListener("click",()=>{irA(paneladmin);});
-  //btn_adminempleados.addEventListener("click",()=>{irA(adminempleados);});
-  //btn_adminproce.addEventListener("click",()=>{irA(adminproce);});
-  //btn_empleadospass.addEventListener("click",()=>{irA(empleadospass);});
-  //btn_adminpass.addEventListener("click",()=>{irA(adminpass);});
-  
-  for(var i=0;i<=1;i++)
+  btn_citaagendada.addEventListener("click",()=>{irA(citaagendada);});
+  btn_procedimientos.addEventListener("click",()=>{irA(procedimientos);}); 
+
+  for(var i=0;i<=2;i++)
   {
       btns_volver[i].addEventListener("click",()=>{irA(home);});
-      //bnt_login[i].addEventListener("click",()=>{irA(login);});
-     // btns_volverAdmin[i].addEventListener("click",()=>{irA(paneladmin);});
+      //btn_login[i].addEventListener("click",()=>{irA(login);});
+     // btns_volverAgendar[i].addEventListener("click",()=>{irA(agendarcita);});
   }
 
 }
