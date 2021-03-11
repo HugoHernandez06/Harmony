@@ -4,7 +4,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <LINK REL=StyleSheet HREF="sass/estilo.css" TYPE="text/css" MEDIA=screen>
    <script src="js/main.js" language="javascript" type="text/javascript"></script>
-   <!-- <script src="js/ligthbox.js" language="javascript" type="text/javascript"></script> -->
+   <script src="js/localstorage.js" language="javascript" type="text/javascript"></script>
    <title>Harmony</title>
 </head>
   <body>
@@ -21,18 +21,20 @@
           <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a><br>
         </div>
         <div>
-          <label>Usuario : </label><br>  
-          <input type="text" placeholder="Ingresa el usuario" name="username" required><br>
-          <label>Contraseña : </label><br>
-          <input type="password" placeholder="Ingresa la contraseña" name="password" required><br>
-          <label>Confirmar contraseña : </label><br>
-          <input type="password" placeholder="Ingresa la contraseña" name="confirmPassword" required><br>
-          <button href="javascript:void(0);" id="btn_login" >Entrar</button><br>
+          <b><label>Usuario : </label><br> </b> 
+          <input type="text" id="username" placeholder="Ingresa el usuario" required><br>
+          <b><label>Contraseña : </label><br></b>
+          <input type="password" id="pw" placeholder="Ingresa la contraseña" required><br>
+          <button href="javascript:void(0);" id="btn_login" onclick="store()" >Registrar</button><br>
           Ya estas registrado?<a href="javascript:void(0);" id="btn_iniciar_Sesion"> Iniciar sesión </a><br><br><br>
+          <b><a >La contraseña:</a>  <br></b>
+            <a> Debe tener al menos 1 numero</a> 
+            
+          </ul>
         </div>  
-        <div class="footer">
-            Copyright 2021 ©
-        </div>
+        <b><div class="footer">
+          Copyright 2021 ©
+      </div></b>
       </section>
 
       <!--Login -->
@@ -41,17 +43,20 @@
           <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a><br><br>
         </div>
         <div>
-            <label>Usuario : </label><br>  
-            <input type="text" placeholder="Ingresa el usuario" name="username" required><br>
-            <label>Contraseña : </label><br>
-            <input type="password" placeholder="Ingresa la contraseña" name="password" required><br>
-            <button href="javascript:void(0);" id="btn_home" >Entrar</button><br>
+          <b><label>Usuario : </label><br> </b>  
+            <input type="text"  id="userName" placeholder="Ingresa el usuario" required><br>
+            <b><label>Contraseña : </label><br></b>
+            <input type="password" id="userPw" placeholder="Ingrese la contraseña" required><br>
+           
+            <button href="javascript:void(0);" id="btn_home" onclick="check()" >Entrar</button><br>
             <input type="checkbox" checked="checked"> Recordarme.<br>
-            No estas registrado?<a href="javascript:void(0);" id="btn_register">Registrarse</a><br><br><br>
-        </div>
-        <div class="footer">
+            
+            No estas registrado?<a href="javascript:void(0);" id="btn_register" value="login">Registrarse</a><br><br><br>
+            
+          </div>
+        <b><div class="footer">
             Copyright 2021 ©
-        </div>
+        </div></b>
       </section>
 
       <!--home -->
@@ -63,9 +68,9 @@
           <button href="javascript:void(0);" id="btn_agendarcita"> Agendar Citas</button>
          <!-- <button href="javascript:void(0);" id="btn_buscarcita"> Busqueda Citas</button> -->
           <button href="javascript:void(0);" id="btn_procedimientos"> Procedimientos y Tarifas</button>
-          <div class="footer">
+          <b><div class="footer">
             Copyright 2021 ©
-        </div>
+        </div></b>
       </section>
       
       <!--Agendar Citas -->
@@ -94,9 +99,9 @@
         <label>Hora Cita : </label>   <br>
         <input type="text" placeholder="Ingrese la hora de la cita" name="horaCita" required>  <br>
         <button id="btn_citaagendada" type="submit">Agendar</button> <br><br><br> 
-        <div class="footer">
-            Copyright 2021 ©
-        </div>
+        <b><div class="footer">
+          Copyright 2021 ©
+      </div></b>
       </section>
 
       <!--Cita Agendada -->
@@ -109,9 +114,9 @@
           <a><img src="./imgs/verificate.png" alt="Logo"></a>
 
           <!--<button href="javascript:void(0);" clas="volverAgendar" id="btn_agendarcita"> Agendar otra cita</button> --> 
-          <div class="footer">
+          <b><div class="footer">
             Copyright 2021 ©
-        </div>
+        </div></b>
       </section>
 
       <!--Procedimientos y tarifas-->
@@ -139,9 +144,9 @@
             <p>*Muestra el costo*</p><br>
             <label>Horarios : </label>   <br>
             <p>*Muestra el horario*</p><br><br><br>
-          <div class="footer">
-            Copyright 2021 ©
-          </div>
+            <b><div class="footer">
+              Copyright 2021 ©
+          </div></b>
         </section>        
   </body>
 </html>
