@@ -4,7 +4,6 @@ function store(){
     localStorage.setItem('nameU',nameU.value);
     localStorage.setItem('pw',pw.value);
 }
-//checking
 function check(){
     // Register-Form
     var storedName = localStorage.getItem('nameU');

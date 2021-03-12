@@ -151,25 +151,7 @@ $(document).ready(function() {
 
 		numOfOrders = $("#listOfOrders").children().length;
 		$(".num").text(numOfOrders);
-
-		// display total price in cart orders
-		var totalOrderPrice = 0;
-		$("#listOfOrders").children("li").children(".orderPrice").children("span").each(function () {
-			var price = parseFloat($(this).text());
-			totalOrderPrice += price;
-			$(".cart > h3 > span").text(totalOrderPrice + "$");
-		});
-
-		// remove order from cart
-		$(".delBtn").on("click", function () {
-			var removePrice = $(this).parent().parent().children(".orderPrice").children("span").text();
-			totalOrderPrice -= removePrice;
-			$(".cart > h3 > span").text(totalOrderPrice + "$");
-
-			$(this).parents("li").remove();
-			numOfOrders = $("#listOfOrders").children().length;
-			$(".num").text(numOfOrders);
-		})
+		
 	}); // List over (done button)
 
 	$(".finishOrder").on("click", function () {
