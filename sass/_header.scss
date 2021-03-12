@@ -1,0 +1,71 @@
+$color-background : #FFAFCC;
+$color-footer-header : #FF99BE;
+$color-btn : #9968b6;
+
+.container{
+    position: absolute;
+    width: 100%;
+    padding-top: 70px !important;
+    padding: 40px;
+    background-color: transparent;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  nav{
+    background-color: $color-background;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 65px;
+    width: 375px;
+    padding: 10px,10px;
+    background-color: $color-footer-header;
+  }
+  button {
+    background-color: $color-btn;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:300px;
+    height:40px;
+    padding: 10px,10px;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .volver {
+    background-color: $color-btn;
+    color: white;
+    padding-left: 10px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height:40px;
+  }
+

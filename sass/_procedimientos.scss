@@ -1,0 +1,162 @@
+$color-background : #FFAFCC;
+$color-footer-header : #FF99BE;
+$color-btn : #9968b6;
+$ancho-botones: 300px;
+$alto-botones: 40px;
+$ancho-cuadrostexto : 300px;
+$alto-cuadrostexto : 40px;
+$img-ancho : 300px;
+$img-alto : 100px;
+.btnStyle{
+    background-color: $color-btn;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 10px;
+    letter-spacing: .1em;
+    border-radius: 3px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  .btnStyle:hover{
+    background-color: #874;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+    transform: scale(1.05, 1.05);
+  }
+  .btnStyle2{
+    background-color: $color-btn;
+  }
+  .btnStyle2:hover{
+    background-color: $color-btn;
+  }
+  .btnStyle3{
+    background-color: $color-btn;
+  }
+  .btnStyle3:hover{
+    background-color: $color-btn;
+  }
+  .toggleCart{
+    position: relative;
+  }
+  .fa-circle {
+      font-size: 21px !important;
+      color: #C98474 ;
+  }
+  .num {
+      font-size: 12px;
+      padding: 3px 6px;
+      color: #fff;
+  }
+  .num, .fa-circle {
+      position: absolute;
+      right: -9px;
+      top: -9px;
+  }
+  .body-content{
+    position: relative;
+    right: 0px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    transition: all .2s ease-in-out;
+  }
+  .recipe-menu{
+    margin-top: 100px;
+    display:inline-block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .recipe{
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .recipe img{
+    width: 335px;
+    height:225px;
+    position: center;
+  }
+  .name{
+    font-size: 20px;
+    background-color: $color-footer-header;
+    text-align: center;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px 15px;
+  }
+  .recipe:hover > .addToCart{
+    opacity: 1;
+  }
+  .addToCart {
+    opacity: 0;
+    position:relative;
+    width: 170px;
+    transition: all .2s ease-in-out;
+  }
+  .checkOrder{
+    padding: 50px;
+  }
+  .checkOrder {
+    padding: 29px 50px !important;
+  }
+  .listHeading {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .listOfIngredients{
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  .listOfIngredients input{
+    margin: 0px 5px;
+  }
+  .addIngredientWrap{
+    display: flex;
+    margin: 5px 0;
+  }
+  .addIngredientWrap input{
+    width: 60%;
+  }
+  .addIngredientWrap a{
+    padding: 2px 6px;
+    margin: 0 5px;
+    font-size: 15px;
+  }
+  .ui-dialog {
+    z-index: 2;
+    box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
+    background-color: #fff;
+    padding: 30px;
+  }
+  .ui-draggable-handle {
+    position: absolute;
+    background-color: $color-footer-header;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999;
+  }
+  .ui-button {
+    background-color: $color-btn;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px;
+    width: 50px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  .ui-button:hover{
+    background-color: $color-btn;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+    transform: scale(1.05, 1.05);
+  }

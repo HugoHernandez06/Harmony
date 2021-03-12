@@ -1,0 +1,14 @@
+$color-footer-header : #FF99BE;
+   
+footer{
+    background-color: $color-footer-header;
+    flex: 0 0 auto;
+    bottom: 0;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 1.6rem; /* Footer height */
+    text-align: center;/* Footer position */
+  }
+  
+    
