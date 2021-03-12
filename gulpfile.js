@@ -1,6 +1,15 @@
-function defaultTask(cb) {
-    // place code for your default task here
-    cb();
-  }
-  
-  exports.default = defaultTask
+const {src,dest} = require('gulp');
+const sass = require('gulp-sass');
+const rename = require('gulp-rename');
+const cleanCSS = require('gulp-clean-css');
+
+function css(){
+    return src("./sass/**/*.scss")
+        .pipe(sass())
+        .pipe(cleanCSS())
+        .pipe(rename('estilo.min.css'))
+        .pipe(dest("./css"));
+}
+
+exports.css = css;
+exports.default = ()=>{};
