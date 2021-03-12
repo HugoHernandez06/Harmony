@@ -1,33 +1,20 @@
-@charset "UTF-8";
-section {
+body {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+body section {
   width: 375px;
   height: 600px;
   background: #FFAFCC;
   overflow: auto;
   text-align: center;
 }
-
-body {
-  margin: 0;
-  /* General */
-  /* Icons */
-  /* Buttons */
-  /*------------------------------------*/
-  /* Navigation */
-  /* 🚨 Estos estilos no se modifican para probar el ancho*/
-  font-family: sans-serif;
-  /* CSS Simple Pre Code */
-  /* Style CSS */
-  /*where the magic happens*/
-  /* orders */
-  /* Dialog Style */
-}
 body * {
   box-sizing: border-box;
-}
-body body {
-  margin: 0;
-  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
 }
 body footer {
   background-color: #FF99BE;
@@ -35,15 +22,22 @@ body footer {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+body .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* Footer height */
+  background-color: #FF99BE;
+  text-align: center;
+  /* Footer position */
+}
 body .main-content {
   flex: 1 0 auto;
 }
 body .btn_verificar {
   width: 200px;
   height: 230px;
-}
-body .cl-white {
-  color: white;
 }
 body .container {
   position: absolute;
@@ -67,15 +61,8 @@ body .material-icons {
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
-body .material-icons.cl-white {
-  color: white;
-}
-body .btn-transparent {
-  background-color: transparent;
-  border-color: transparent;
-}
 body nav {
-  background-color: #669bbc;
+  background-color: #FFAFCC;
   justify-content: space-between;
   display: flex;
   padding: 5px;
@@ -96,10 +83,6 @@ body .fixed-top {
 body p {
   background: white;
 }
-body .volverAgendar {
-  width: 300px;
-  height: 40px;
-}
 body .ocultar {
   display: none;
 }
@@ -110,59 +93,6 @@ body img {
 }
 body div {
   padding: 10px;
-}
-body pre {
-  background: #333;
-  white-space: pre;
-  word-wrap: break-word;
-  overflow: auto;
-}
-body pre.code {
-  margin: 20px 25px;
-  border-radius: 4px;
-  border: 1px solid #292929;
-  position: relative;
-}
-body pre.code label {
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 13px;
-  color: #ddd;
-  position: absolute;
-  left: 1px;
-  top: 15px;
-  text-align: center;
-  width: 60px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  pointer-events: none;
-}
-body pre.code code {
-  font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-  display: block;
-  margin: 0 0 0 60px;
-  padding: 15px 16px 14px;
-  border-left: 1px solid #555;
-  overflow-x: auto;
-  font-size: 13px;
-  line-height: 19px;
-  color: #ddd;
-}
-body pre::after {
-  content: "double click to selection";
-  padding: 0;
-  width: auto;
-  height: auto;
-  position: absolute;
-  right: 18px;
-  top: 14px;
-  font-size: 12px;
-  color: #ddd;
-  line-height: 20px;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  transition: all 0.3s ease;
 }
 body input[type=text], body input[type=password], body input[type=date], body input[type=time] {
   width: 100%;
@@ -219,34 +149,15 @@ body .volver {
   width: 100px;
   height: 40px;
 }
-body .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: purple;
-}
-body body {
-  margin: 0;
-  padding: 0;
-}
-body #abrir {
-  width: 150px;
-  height: 50px;
-  display: block;
-  margin: 50px auto;
+body .volverAgendar {
+  width: 300px;
+  height: 40px;
 }
 body .show {
   display: block;
 }
 body .hidden {
   display: none;
-}
-body .ligthbox {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
 }
 body .login_content {
   position: relative;
@@ -259,60 +170,9 @@ body .login_content {
   margin-top: -115px;
   border-radius: 5%;
 }
-body .close_button {
-  position: absolute;
-  background-color: #333;
-  top: 10px;
-  right: 10px;
-  color: white;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 23px;
-  line-height: 34px;
-  font-family: verdana;
-}
 body .close_button:hover {
   background-color: white;
   color: #333;
-}
-body #input_name {
-  position: absolute;
-  top: 70px;
-  left: 60px;
-  width: 210px;
-  height: 28px;
-  border-radius: 6px;
-}
-body #input_password {
-  position: absolute;
-  top: 113px;
-  left: 60px;
-  width: 210px;
-  height: 28px;
-  border-radius: 6px;
-}
-body #button_login {
-  position: absolute;
-  top: 160px;
-  left: 60px;
-  width: 110px;
-  height: 40px;
-  border-radius: 5px;
-}
-body #button_cancel {
-  position: absolute;
-  top: 160px;
-  left: 175px;
-  width: 101px;
-  height: 40px;
-  border-radius: 5px;
-}
-body * {
-  margin: 0px;
-  padding: 0px;
 }
 body input {
   outline-color: #C98474;
@@ -322,7 +182,7 @@ body .navbar {
   width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: #ff99be;
+  background-color: #FF99BE;
   border-radius: 0px;
   padding: 0px 100px;
   display: flex;
@@ -344,7 +204,7 @@ body .btnStyle {
   transition: all 0.2s ease-in-out;
 }
 body .btnStyle:hover {
-  background-color: #874 #9968b6C6 2;
+  background-color: #874;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 6px 10px rgba(0, 0, 0, 0.23);
   transform: scale(1.05, 1.05);
 }
@@ -376,36 +236,6 @@ body .num, body .fa-circle {
   position: absolute;
   right: -9px;
   top: -9px;
-}
-body .cart {
-  width: 200px;
-  position: fixed;
-  top: 60px;
-  bottom: 0px;
-  right: -300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  z-index: 1;
-  background-color: #874C62;
-  padding: 30px;
-  box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
-  transition: all 0.25s ease-in-out;
-}
-body .cart h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-body #cartToggle {
-  display: none;
-}
-body #cartToggle:checked ~ div.body-content > .cart {
-  right: 0px;
-}
-body #cartToggle:checked ~ div.body-content {
-  right: 0px;
-}
-body #cartToggle:checked ~ div.body-content > .cart > a.finishOrder {
-  right: 5px;
 }
 body .body-content {
   position: relative;
@@ -480,78 +310,6 @@ body .addIngredientWrap a {
   margin: 0 5px;
   font-size: 15px;
 }
-body .cancelInput {
-  background-color: #B33232;
-}
-body .orderName {
-  padding: 13px 0px 8px 0px;
-}
-body .orderPrice {
-  float: right;
-}
-body hr {
-  margin: 25px 0 5px 0;
-}
-body .delBtn {
-  float: right;
-  color: #F2D388;
-  cursor: pointer;
-}
-body .totalDialog {
-  display: inline-block;
-  float: right;
-}
-body .cart > h2 > span {
-  margin-left: 5px;
-}
-body .finishOrder {
-  width: 200px;
-  position: fixed;
-  bottom: 0;
-  right: -265px;
-  z-index: 2;
-  padding: 6px 28px;
-  border-radius: 0;
-  text-align: center;
-}
-body #finishOrderDialog {
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-body #finalOrderList {
-  width: 40%;
-}
-body #finalOrderList h3 {
-  text-align: center;
-}
-body #finalOrderList ol {
-  margin: 10px 15px;
-}
-body #buyerInfo {
-  width: 60%;
-  margin: 0 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-body #buyerInfo input {
-  margin: 5px 0;
-  padding: 3px;
-  width: 90%;
-}
-body #buyerInfo .order {
-  display: block;
-  width: 50%;
-  margin-top: 10px;
-  text-align: center;
-}
-body #buyerInfo input::-webkit-input-placeholder {
-  text-align: center;
-}
-body #thanksMessage {
-  padding: 20px;
-}
 body .ui-dialog {
   z-index: 2;
   box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
@@ -560,7 +318,7 @@ body .ui-dialog {
 }
 body .ui-draggable-handle {
   position: absolute;
-  background-color: #ff99be;
+  background-color: #FF99BE;
   width: 100%;
   top: 0;
   left: 0;
@@ -585,21 +343,3 @@ body .ui-button:hover {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 6px 10px rgba(0, 0, 0, 0.23);
   transform: scale(1.05, 1.05);
 }
-body .footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  /* Footer height */
-  background-color: #ff99be;
-  text-align: center;
-  /* Footer position */
-}
-body .texto {
-  position: absolute;
-  width: 100%;
-  padding-top: 75px !important;
-  padding: 40px;
-}
-
-/*# sourceMappingURL=estilo.css.map */

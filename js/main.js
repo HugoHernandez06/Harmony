@@ -55,7 +55,7 @@ function crearReferencias(){ //Saco el id de la seccion y del boton
   //Botones de volver
   //btns_volver = document.getElementById("btn_volver"); //Volver al home
   btns_volver = document.querySelectorAll(".volver"); //Volver al home
- // btns_volverAgendar = document.querySelectorAll(".volverAgendar"); //Volver al panel admin
+  btns_volverAgendar = document.querySelectorAll(".volverAgendar"); //Volver al panel admin
   //btns_volverAdmin = document.querySelectorAll(".volverAdmin"); //Volver al panel admin
   btn_register = document.getElementById("btn_register");
   btn_login = document.getElementById("btn_login");
