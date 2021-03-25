@@ -13,13 +13,78 @@ $img-alto : 100px;
 @use "procedimientos";
 
 body{
+  .contenedor {
+    height: 400px;
+    margin: auto;
+    width: 400px;
+    -webkit-perspective: 700;
+  }
+  
+  .carta {
+    height: 100%;
+    width: 100%;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+  }
+  
+  .carta:hover{
+    transform: rotateY(180deg);
+  }
+  
+  .lado{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+     background: #F0F0F0;
+    backface-visibility: hidden;
+  }
+  
+  .frente{ background-color:$color-footer-header }
+  .frente h3 {
+     position: absolute;
+     font-size: 38px;
+     margin-top: 200px;
+     color: black;
+  }
+  
+  ul {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    height: 204px;
+    
+  }
+  
+  li {
+    text-decoration: none;
+    padding: 10px;
+    z-index:80;
+    text-align: left;
+  }
+  
+  
+  .atras{
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+  
+  .atras h3 {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
   margin: 0;
   padding: 0;
   flex-direction: column;
   font-family:sans-serif;
+
   section{
-    width:375px;
-    height:600px;
+    width:500px;
+    height:800px;
     background: $color-background;
     overflow:auto;
     text-align:center;
@@ -70,6 +135,18 @@ body{
     width:$ancho-cuadrostexto;
     height:$alto-cuadrostexto;
     padding: 10px,10px;
+  }
+  input[type=button]{
+      background-color: $color-btn;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width:300px;
+      height:40px;
+      padding: 10px,10px;
+    
   }
   select{
     width: 100%;
@@ -124,6 +201,83 @@ body{
   input{
     outline-color: #C98474;
   }
-  
+  // con los @use no queda de la mejor forma
+  footer{
+    background-color: $color-footer-header;
+    flex: 0 0 auto;
+    bottom: 0;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 1.6rem; /* Footer height */
+    text-align: center;/* Footer position */
+  }
+  .container{
+    position: absolute;
+    width: 100%;
+    padding-top: 70px !important;
+    padding: 40px;
+    background-color: transparent;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  nav{
+    background-color: $color-background;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 65px;
+    width: 500px;
+    padding: 10px,10px;
+    background-color: $color-footer-header;
+  }
+  button {
+    background-color: $color-btn;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:300px;
+    height:40px;
+    padding: 10px,10px;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .volver {
+    background-color: $color-btn;
+    color: white;
+    padding-left: 10px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height:40px;
+  }
+  // Eliminar si se va usar los @use
   
 }
