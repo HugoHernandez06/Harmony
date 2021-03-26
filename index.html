@@ -61,7 +61,8 @@
           <h3> Opciones</h3>
           <button href="javascript:void(0);" id="btn_agendarcita"> Agendar Citas</button>
           <button href="javascript:void(0);" id="btn_procedimientos"> Procedimientos y Tarifas</button>
-          </section>
+          <button href="javascript:void(0);" id="btn_creditos"> Creditos</button>
+        </section>
           <footer>
           Copyright 2021 ©
           </footer>
@@ -105,6 +106,46 @@
           Copyright 2021 ©
       </footer>
       </section>
+            <!--Agendar Citas -->
+      <section id="agendarcita" class="ocultar">
+        <div class="container">
+          <nav class="fixed-top">
+            <a  id="btn_volver" class="volver"> Volver </a>
+            <p class="cl-white">
+            </p>
+          </nav>
+        </div>
+        <section class="main-content"> 
+          <div class="recipe-menu">  
+        <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a><br>
+        <h3>Agendar Citas</h3>
+        <label>Nombre Completo </label> <br>  
+        <input type="text" placeholder="Ingrese el nombre completo" name="nombrecita" required>  <br>
+        <label>Documento : </label>   <br>
+        <input type="text" placeholder="Ingrese el Documento" name="documento" required>  <br>
+        <label>Celular : </label>   <br>
+        <input type="text" placeholder="Ingrese el numero celular" name="celular" required>  <br>
+        <label>Procedimiento : </label>   <br>
+        <select name="procename">
+          <option value="1">Perfiación de labios</option> 
+          <option value="2">Aumento de labios</option> 
+          <option value="3">Masaje de glúteos</option>
+          <option value="4">Lipopapada</option> 
+          <option value="5">Perfiación de mentón</option>
+          <option value="6">Rinomodelación</option>  
+        </select><br>
+        <label>Fecha Cita : </label><br>
+        <input type="date" name="fechaCita" required value="2021-03-11">  <br>
+        <label>Hora Cita : </label>   <br>
+        <input type="time" name="horaCita" required value="00:00">  <br>
+        <button id="btn_citaagendada" type="submit">Agendar</button> <br><br><br>
+      </div>
+      </section>
+        <footer>
+          Copyright 2021 ©
+      </footer>
+      </section>
+      
       <!--Cita Agendada -->
       <section id="citaagendada" class="ocultar">
         <div class="container">
@@ -145,7 +186,7 @@
                 <div class="contenedor">
                   <div class="carta">
                     <div class="lado frente">
-                      <img src="/imgs/Perfilacion_Labios.png" >
+                      <img src="./imgs/Perfilacion_Labios.png" >
                     </div>
                       <div class="lado atras">
                         <h3>Información del procedimiento:</h3>
@@ -169,7 +210,7 @@
                   <div class="contenedor">
                     <div class="carta">
                       <div class="lado frente">
-                        <img src="/imgs/Aumento_de_labios.png" >
+                        <img src="./imgs/Aumento_de_labios.png" >
                       </div>
                         <div class="lado atras">
                           <h3>Información del procedimiento:</h3>
@@ -193,7 +234,7 @@
                   <div class="contenedor">
                     <div class="carta">
                       <div class="lado frente">
-                        <img src="/imgs/Gluteos.png" >
+                        <img src="./imgs/Gluteos.png" >
                       </div>
                         <div class="lado atras">
                           <h3>Información del procedimiento:</h3>
@@ -217,7 +258,7 @@
                 <div class="contenedor">
                   <div class="carta">
                     <div class="lado frente">
-                      <img src="/imgs/Lipopapada.png" >
+                      <img src="./imgs/Lipopapada.png" >
                     </div>
                       <div class="lado atras">
                         <h3>Información del procedimiento:</h3>
@@ -241,7 +282,7 @@
                 <div class="contenedor">
                   <div class="carta">
                     <div class="lado frente">
-                      <img src="/imgs/Perfilacion_de_Menton.png" >
+                      <img src="./imgs/Perfilacion_de_Menton.png" >
                     </div>
                       <div class="lado atras">
                         <h3>Información del procedimiento:</h3>
@@ -265,7 +306,7 @@
                 <div class="contenedor">
                   <div class="carta">
                     <div class="lado frente">
-                      <img src="/imgs/Rinomodelacion.png" >
+                      <img src="./imgs/Rinomodelacion.png" >
                     </div>
                       <div class="lado atras">
                         <h3>Información del procedimiento:</h3>
@@ -289,7 +330,32 @@
           <footer>
             Copyright 2021 ©
           </footer>
-        </section>  
+        </section>
+  <!--Creditos -->
+  <section id="creditos" class="ocultar">
+    <div class="container">
+      <nav class="fixed-top">
+        <a  id="btn_volver" class="volver"> Volver </a>
+        <p class="cl-white">
+        </p>
+      </nav>
+    </div>
+    <section class="main-content"> 
+      <div class="recipe-menu">  
+        <a><img src="./imgs/Logo_Harmony.png" alt="Logo"></a><br>
+        <h3>Autores</h3> <br>
+        <label>Daniel Felipe Cadavid Duque</label> <br>  
+        <label>Hugo Alejandro Hernández Cárdenas</label> <br><br>
+        <h3>Contacto:</h3> <br>
+        <label>daniel.cadavidd@upb.edu.co</label> <br>
+        <label>hugoa.hernandez@upb.edu.co</label> <br> 
+      
+      </div>
+  </section>
+    <footer>
+      Copyright 2021 ©
+  </footer>
+  </section>
               
   </body>
 </html>
